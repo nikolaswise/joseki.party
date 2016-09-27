@@ -1,5 +1,5 @@
 :root {
-  --board-width: 60vw;
+  --board-width: 60vmin;;
   --node-size-nine: calc(var(--board-width) / 9 * .8);
   --node-size-thirteen: calc(var(--board-width) / 13 * .8);
   --node-size-nineteen: calc(var(--board-width) / 19 * .8);
@@ -158,7 +158,7 @@ body {
   right: 0;
   left: 0;
   text-align: center;
-  font-size: 3vw;
+  font-size: 3vmin;;
 }
 
 .game-is-over.player-white .board-turn-white .node.node-empty:hover,
@@ -215,7 +215,7 @@ body {
 
 .player {
   position: relative;
-  width: 14vw;
+  width: 14vmin;;
   box-sizing: border-box;
   height: var(--board-width);
   max-height: 1000px;
@@ -226,7 +226,7 @@ body {
 
 /* purple drank/sizzurp theme */
 .player-marker {
-  margin-top: 25vw;
+  margin-top: 25vmin;;
   width: calc(var(--board-width) / 12);
   height: calc(var(--board-width) / 12);
   box-sizing: border-box;
@@ -259,14 +259,14 @@ body {
 .komi {
   text-align: center;
   position: absolute;
-  right: 1.5vw;
-  width: 0.85vw;
-  height: 0.85vw;
-  font-size: 0.85vw;
+  right: 1.5vmin;;
+  width: 0.85vmin;;
+  height: 0.85vmin;;
+  font-size: 0.85vmin;;
   background-color:blue;
   color: white;
   padding: .75em 1em;
-  border-radius: 2vw;
+  border-radius: 2vmin;;
   border: 1px solid black;
   font-family: var(--font-family);
 }
@@ -297,7 +297,7 @@ body {
 .pass-indicator {
   visibility: hidden;
   position: absolute;
-  font-size: 5vw
+  font-size: 5vmin;
 }
 .pass-indicator.player-passed-true {
   visibility: visible;
