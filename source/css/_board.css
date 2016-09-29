@@ -1,12 +1,12 @@
 :root {
-  --board-width: 60vmin;;
-  --node-size-nine: calc(var(--board-width) / 9 * .8);
-  --node-size-thirteen: calc(var(--board-width) / 13 * .8);
-  --node-size-nineteen: calc(var(--board-width) / 19 * .8);
+  --board-width: 75vmin;;
+  --node-size-nine: calc(var(--board-width) / 9 * 1);
+  --node-size-thirteen: calc(var(--board-width) / 13 * 1);
+  --node-size-nineteen: calc(var(--board-width) / 19 * 1);
 }
 
 body {
-  max-width: 1720px;
+  /*max-width: 1720px;*/
   margin: auto;
 }
 
@@ -21,9 +21,7 @@ body {
 .board {
   position: relative;
   width: var(--board-width);
-  max-width: 1000px;
   height: var(--board-width);
-  max-height: 1000px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -32,7 +30,6 @@ body {
 
 .board-row {
   width: var(--board-width);
-  max-width: 986px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -43,7 +40,7 @@ body {
 }
 
 .board-9x9 .goban-grid {
-  max-width: 91.7%;
+  width: calc(var(--board-width) - var(--node-size-nine));
   left: calc(var(--node-size-nine) / 2);
   right: calc(var(--node-size-nine) / 2);
   top: calc(var(--node-size-nine) / 2);
@@ -51,7 +48,7 @@ body {
 }
 
 .board-13x13 .goban-grid {
-  max-width: 94%;
+  width: calc(var(--board-width) - var(--node-size-thirteen));
   left: calc(var(--node-size-thirteen) / 2);
   right: calc(var(--node-size-thirteen) / 2);
   top: calc(var(--node-size-thirteen) / 2);
@@ -59,7 +56,7 @@ body {
 }
 
 .board-19x19 .goban-grid {
-  max-width: 96%;
+  width: calc(var(--board-width) - var(--node-size-nineteen));
   left: calc(var(--node-size-nineteen) / 2);
   right: calc(var(--node-size-nineteen) / 2);
   top: calc(var(--node-size-nineteen) / 2);
@@ -89,9 +86,7 @@ body {
 }
 .board-19x19 .node {
   width: var(--node-size-nineteen);
-  max-width: 38px;
   height: var(--node-size-nineteen);
-  max-height: 38px;
   border-radius: calc(var(--node-size-nineteen) / 2);
 }
 
