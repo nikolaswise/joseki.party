@@ -145,6 +145,7 @@ body.theme-blank {
 
 /* Modal */
 .theme-blank .modal-content {
-  /*color: var(--lightest-purple);*/
+  border: 3px solid white;
+  color: white;
   background-color:  var(--black);
 }
